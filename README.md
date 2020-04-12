@@ -17,4 +17,5 @@ C'est la raison pour laquelle on a pensé a virtualier que les applications, pou
 * on a une infrastructure matérielle
 * on a un systeme d'exlpotation hôte ( dans la majourité des cas c'est Linux )
 * on a un Container Engine au lieu de Hypervisor de virtualisation
-* an a un conteneur, chaque conteneur contient une application avec ces dépendances , c'est une manière d'isoler une application de cette facon on peut l'executer dans n'importe où. 
+* an a un conteneur, chaque conteneur contient une application avec ces dépendances , c'est une manière d'isoler une application de cette facon on peut l'executer dans n'importe où.
+Parmis les choses aussi c'est en utilisant cette approche , on est sur que notre application sera executée correctement dans n'importe quelle machine puisque l'envelope ( container ) contient tout ce que l'application a besoin a condition que la machine dispose d'```Container Engine```.
