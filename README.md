@@ -14,7 +14,7 @@ Il faut noter une chose ce que la machine virtuelle ca reste comme meme lourde, 
 
 C'est la raison pour laquelle on a pensé a virtualier que les applications, pour cela on a changé vers la ```containerisation```.
 ### ```La containerisation```
-* on a une infrastructure matriélle
+* on a une infrastructure matérielle
 * on a un systeme d'exlpotation hôte ( dans la majourité des cas c'est Linux )
 * on a un Container Engine au lieu de Hypervisor de virtualisation
 * an a un conteneur, chaque conteneur contient une application avec ces dépendances , c'est une manière d'isoler une application de cette facon on peut l'executer dans n'importe où. 
