@@ -2,7 +2,7 @@
 Demo sur les concepts de bases et la mise en œuvre des la virtualisation et de la containerisation.
 
 
-# Introduction:
+# Introduction
 ![graphe](cap1.PNG)
 
 L'infrastucture a évolué depuis des années de l'architecture physique ( avec des ordinateurs physiques, infrastructure matrielle et systeme d'exploitation ) vers la ```virtualisation``` grace au ```Hypervisor``` qui permet de créer des machines virtuelles sur la meme machine physique.
@@ -46,3 +46,6 @@ Parmis les choses aussi c'est en utilisant cette approche , on est sur que notre
 
 PS: vous trouvez aussi les # modes de configuration reseau dans une VM dans le meme repertoire.
 
+# Docker Partie Pratique
+### Commandes de base
+![graphe10](cmd1.PNG)
