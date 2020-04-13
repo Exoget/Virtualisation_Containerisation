@@ -21,3 +21,25 @@ C'est la raison pour laquelle on a pensé a virtualier que les applications, pou
 Parmis les choses aussi c'est en utilisant cette approche , on est sur que notre application sera executée correctement dans n'importe quelle machine puisque l'envelope ( container ) contient tout ce que l'application a besoin a condition que la machine dispose d'```Container Engine```.
 ### ```Le Pourquoi```
 ![graphe2](cap2.PNG)
+
+### ```Conteneur VS Virtuel Machine```
+![graphe3](cap3.PNG)
+
+### ```Uilisations de conteneurs```
+![graphe4](cap4.PNG)
+
+### ```Historique```
+![graphe5](cap5.PNG)
+
+### ```C'est quoi Docker```
+![graphe6](cap6.PNG)
+
+### ```Architecture```
+![graphe7](cap7.PNG)
+
+### ```Images Vs Conteneurs```
+![graphe8](cap8.PNG)
+
+### ```Docker dans DevOps```
+![graphe9](cap9.PNG)
+
