@@ -43,3 +43,6 @@ Parmis les choses aussi c'est en utilisant cette approche , on est sur que notre
 ### ```Docker dans DevOps```
 ![graphe9](cap9.PNG)
 
+
+PS: vous trouvez aussi les # modes de configuration reseau dans une VM dans le meme repertoire.
+
