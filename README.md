@@ -49,3 +49,15 @@ PS: vous trouvez aussi les # modes de configuration reseau dans une VM dans le m
 # Docker Partie Pratique
 ### Commandes de base
 ![graphe10](cmd1.PNG)
+
+### Mapping Ports
+![graphe11](mappingPorts.PNG)
+
+### Mapping Volume
+![graphe12](mappingVolume.PNG)
+
+### Inspection Conteneur
+![graphe13](detailleConteneur.PNG)
+
+### Logs Conteneur
+![graphe14](logs.PNG)
