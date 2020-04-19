@@ -52,6 +52,7 @@ La manipulation des images ainsi des conteneurs docker va engendrer des espaces 
 Lorsque le conteneur est tjr défini il y a un espace mémoire qui lui est rattaché, aussi un espace de stockage lui aussi créer dans le cas ou on a défini un volume physique.
 
 * cleaning up Container:
+
 on ne peut pas toucher le volume d'un conteneur en cours d'exécution, il faut l'arrêter tout d'abord  
 
 suppression de tous les conteneurs en cours d'exécution
@@ -75,6 +76,7 @@ suppression de tous les images
 ```>docker rmi ($docker images -q)```
 
 * cleaning up Volume:
+
 une fois le volume est devenu inexploitable ( n'est plus associé avec un conteneur)
 il est considéré comme dangling   
 
