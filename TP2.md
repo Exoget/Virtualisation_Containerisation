@@ -36,8 +36,8 @@ ENTRYPOINT ["java","-Djava.security.edg=file:/dev/./urandom","-jar","/myApp.jar"
 
 Puis pour lancer la contruction de l'image il faut lancer avec ces options
 ```$ docker build -t spring-boot-docker .```
-- t : tag name
-. : chercher le fichier DockerFile dans le repertoir courant
+* - t : tag name
+* . : chercher le fichier DockerFile dans le repertoir courant
 
 
 pour lancer monc conteneur 
