@@ -47,7 +47,7 @@ sans volume
 ```
 ##################################
 
-TIPS : Cleaning Up after Docker
+### TIPS : Cleaning Up after Docker
 La manipulation des images ainsi des conteneurs docker va engendrer des espaces mémoire dans le temps.
 Lorsque le conteneur est tjr défini il y a un espace mémoire qui lui est rattaché, aussi un espace de stockage lui aussi créer dans le cas ou on a défini un volume physique.
 
