@@ -42,9 +42,8 @@ Puis pour lancer la contruction de l'image il faut lancer avec ces options
 
 pour lancer monc conteneur 
 ```$ docker run -d -p 8080:8080 spring-boot-docker```
-#### creation avec maven
 
-# le plugin maven pour Docker c'est Fabric 8
+#### creation avec maven le plugin maven pour Docker c'est Fabric 8
 
 
 ```
