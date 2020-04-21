@@ -55,7 +55,7 @@ pour lancer monc conteneur
         <docker.image.name>springbootdocker</docker.image.name>
     </properties>
 ....
-  <build>
+ <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -64,14 +64,14 @@ pour lancer monc conteneur
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.20.0</version>
+                <version>0.33.0</version>
 
                 <configuration>
                     <!--pour le cas d OSX-->
                     <!--<dockerHost>unix:///var/run/docker.sock</dockerHost>-->
                     <dockerHost>tcp://localhost:2375</dockerHost>
                     <!--<dockerHost>npipe:////./pipe/docker_engine</dockerHost>-->
-                    <verbose>true</verbose> pour afficher plus d'information
+                    <verbose>true</verbose>
                     <images>
                         <image>
                             <name>${docker.image.prefix}/${docker.image.name}</name>
@@ -80,7 +80,6 @@ pour lancer monc conteneur
 
                                 <!--copies artficact to docker build dir in target-->
                                 <assembly>
-								// ramene moi tous ce qui a été buildé les artifact projet (jar) dans le reptoire docker target
                                     <descriptorRef>artifact</descriptorRef>
                                 </assembly>
                                 <tags>
@@ -88,6 +87,11 @@ pour lancer monc conteneur
                                     <tag>${project.version}</tag>
                                 </tags>
                             </build>
+                            <run>
+                                <ports>
+                                    <port>8082:8080</port>
+                                </ports>
+                            </run>
                         </image>
                     </images>
                 </configuration>
@@ -109,4 +113,8 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"
 maven : represente le reperoire target docker qui contient les artifact généré et copié depuis le target maven
 Il faut lancer maven package premierement puis maven docker 
 
-```mvn clean package docker:build```
+```mvn clean package docker:build docker:run```
+This command will create my image , put it to my local dockerhub repo, then start a container based on that image
+pour plus d'info
+* https://docs.docker.com/engine/reference/commandline/build/
+* https://dmp.fabric8.io/#running-containers
