@@ -69,7 +69,8 @@ pour lancer monc conteneur
                 <configuration>
                     <!--pour le cas d OSX-->
                     <!--<dockerHost>unix:///var/run/docker.sock</dockerHost>-->
-                    <dockerHost>http://127.0.0.1:2375</dockerHost>
+                    <dockerHost>tcp://localhost:2375</dockerHost>
+                    <!--<dockerHost>npipe:////./pipe/docker_engine</dockerHost>-->
                     <verbose>true</verbose> pour afficher plus d'information
                     <images>
                         <image>
