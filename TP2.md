@@ -43,7 +43,7 @@ Puis pour lancer la contruction de l'image il faut lancer avec ces options
 pour lancer monc conteneur 
 ```$ docker run -d -p 8080:8080 spring-boot-docker```
 
-#### creation avec maven le plugin maven pour Docker c'est Fabric 8
+#### Creation avec maven le plugin maven pour Docker c'est Fabric 8
 
 
 ```
@@ -118,3 +118,6 @@ This command will create my image , put it to my local dockerhub repo, then star
 pour plus d'info
 * https://docs.docker.com/engine/reference/commandline/build/
 * https://dmp.fabric8.io/#running-containers
+
+Avec le plugin maven je peux lancer tous les commandes docker
+mvn docker:run ,  docker:start ( il va etre lancer en mode daemon background ), docker:stop  
