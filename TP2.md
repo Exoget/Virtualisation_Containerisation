@@ -120,4 +120,4 @@ pour plus d'info
 * https://dmp.fabric8.io/#running-containers
 
 Avec le plugin maven je peux lancer tous les commandes docker
-mvn docker:run ,  docker:start ( il va etre lancer en mode daemon background ), docker:stop  
+mvn docker:run ,  docker:push , docker:start ( il va etre lancer en mode daemon background ), docker:stop  
