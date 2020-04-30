@@ -1,4 +1,4 @@
-## Maipulations des conteneurs
+## Manipulations des conteneurs
 
 c'est le TP de rabbitMq avec la partie client qui envoie un msg vers la file, le micro service va consomer le msg et va l'inserer dans la base mysql
 * https://github.com/Exoget/page-view-service
@@ -155,3 +155,8 @@ Au final , il faut builer l'image et lancer tous les conteneurs
 ```
 mvn clean package docker:build docker:run
 ```
+
+### test d'integration
+on va utiliser maven failsafe plugin pour cette partie.
+avec le plugin fabric8 on va gerer le lifecycle de conteneurs, on va demarrer les conteneur juste avant les test d'integration, une fois
+les tests sont terminées fabric8 arrete les conteneurs.
