@@ -86,8 +86,8 @@ For example, here's a simple configuration of the Maven Failsafe plugin which is
 ```
 As we can see, the Failsafe plugin has two main goals configured here:
 
-* integration-test: run integration tests
-* verify: verify all integration tests passed
+* integration-test: run integration tests ( lié au phase intergration-test )
+* verify: verify all integration tests passed ( lié au phase verify )
 
 We can use the following command to list all goals in a specific plugin:
 
