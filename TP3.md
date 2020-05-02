@@ -160,3 +160,13 @@ mvn clean package docker:build docker:run
 on va utiliser maven failsafe plugin pour cette partie.
 avec le plugin fabric8 on va gerer le lifecycle de conteneurs, on va demarrer les conteneur juste avant les test d'integration, une fois
 les tests sont terminées fabric8 arrete les conteneurs.
+
+https://github.com/Exoget/spring-boot-docker
+``` mvn verify ```
+
+### Maven avec CI build
+la commande maven utiliser pour lancer tous process.
+
+``` mvn clean package docker:build verify docker:push```
+
+voici les étapes : nettoyer l'environement , compiler , lancer les unit tests crere le package, puis avec la phase verify on va contruit l'image local et lancer les conteneur, lancer les test d'integration un fois executés stoper les conteneurs puis pousser l'image vers le docker Hub
