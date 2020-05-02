@@ -150,8 +150,20 @@ exoget/pageviewservice
                 </configuration>
             </plugin>
 ```
+avec la configuration dans la partie service
+```
+=======================================================================================
+# Spring actuator
+# https://o7planning.org/fr/11757/application-de-surveillance-avec-spring-boot-actuator
+=======================================================================================
+server.port=8081
+#management.server.port=8090 dans le cas ou on veut séparer le port management de l'application
+management.endpoint.shutdown.enabled=true
+management.endpoints.web.exposure.include=*
+```
 
-Au final , il faut builer l'image et lancer tous les conteneurs 
+Au final , il faut builder l'image et lancer tous les conteneurs 
+
 ```
 mvn clean package docker:build docker:run
 ```
