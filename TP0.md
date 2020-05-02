@@ -67,6 +67,9 @@ nginix conteneur avec le  meme port 80)
 
 
 > docker run --name my-mySQL -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+Pour entrer en mode shell dans un cotenuer en cours d'execution
+> docker exec -it <container name> bash
 > docker exec -it my-mySQL mysql --password  ( i : mode interactif; t : terminal) ( je suis entrain d'executer un commande mysql a l'interieru
 du conteneur my-mySQL en mode interractif consol
 ``` 
