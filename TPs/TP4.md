@@ -4,7 +4,7 @@ Dans les autres Tps , on a utilisé le plugin maven fabric8 pour orchestrer les 
 
 Avec Docker Compose, c'est la meme chose un outil pour orchestrer les conteneurs en utilisant YML pour décrire les environements utilsés.
 Maintenant si on parle de devops et les gens de la prod les ops on va pas leurs fournir le plugin maven fabric8 ( il ne sont pas intéressé par maven qui reste un outil de build).
-Docker compose a ete concu pour la production pour la gestion des applications, il y a d'autre outil qui sont plus sophistiqué à titre d'exp Kubernetes ( pour la grande échelle ) 
+Docker compose a ete concu pour la production pour la gestion des applications, il y a d'autre outil qui sont plus sophistiqué comme Kubernetes ou bien OpenShift ( pour la grande échelle ) 
 
 ### Docker-compose exemple
 
