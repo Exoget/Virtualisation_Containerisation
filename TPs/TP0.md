@@ -1,4 +1,4 @@
-
+## Introduction Docker par la pratique:
 
 ```> cat /etc/*release*``` 
 information a propos de la version installée

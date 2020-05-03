@@ -1,4 +1,4 @@
-## Manipulations des conteneurs
+## Manipulation des conteneurs avec Maven
 
 c'est le TP de rabbitMq avec la partie client qui envoie un msg vers la file, le micro service va consomer le msg et va l'inserer dans la base mysql
 * https://github.com/Exoget/page-view-service

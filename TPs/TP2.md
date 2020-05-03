@@ -1,4 +1,4 @@
-### Creation d'images Docker
+## Creation des Images Docker avec Maven
 
 Nous devons partir d'une image de base. voici un exemple de manipluation d'une image OS de base.
 
