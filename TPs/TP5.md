@@ -21,3 +21,45 @@ Le Docker Swarm mode est installé par defaut avec Docker mais pas activé, il f
 
 Il y a d'autres solution plus mature est sophihstiqué dans le marché comme Kubernates ( solution Goole) et OpenShit ( Red Hat ) et Appach Mesos et fianlement MesosPhere. Il y  beaucoup de concurrence et compétition entre ces fournisseurs.
 
+## Maniplution Docker Swarm
+
+```> Docker info``` pour afficher le mode swarm et son staut
+
+```> Docker swarm init``` pour l'activation, puis la commande info
+
+```Swarm: active
+  NodeID: xxxxxxx
+  Is Manager: true
+  ClusterID: xxxxxxxxxx
+  Managers: 1
+  Nodes: 1
+  Default Address Pool: xxx.xx.xx.xxx/xx
+  SubnetSize: 24
+  Data Path Port: 4789
+  Orchestration:
+   Task History Retention Limit: 5
+  Raft:
+   Snapshot Interval: 10000
+   Number of Old Snapshots to Retain: 0
+   Heartbeat Tick: 1
+   Election Tick: 10
+  Dispatcher:
+   Heartbeat Period: 5 seconds
+  CA Configuration:
+   Expiry Duration: 3 months
+   Force Rotate: 0
+  Autolock Managers: false
+  Root Rotation In Progress: false
+  Node Address: xxxx.xxx.xxxx.xxxx
+  Manager Addresses:
+   xxx.xxx.xxxx.xx:xxx
+```
+
+puis la commande
+
+```docker node ls``` nous aurrons une ligne dedans
+
+revenons sur l'explication
+Docker sawrm init : docker creer une cle privé PKI ( private key infrastructure) en bakcground et encripte tous les données, puis il l'initialise ,configure le certificat pour swarm, creer un certificat pour le manager et le node et apres creer un join token.
+Apres il y a eu une creation de la base Raft consensus ( Raft est un protocole pour sync les noeud) 
+
