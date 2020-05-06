@@ -70,10 +70,13 @@ nginix conteneur avec le  meme port 80)
 > docker run --name my-mySQL -e MYSQL_ROOT_PASSWORD=root -d mysql
 ``` 
 Pour entrer en mode shell dans un cotenuer en cours d'execution
+
 ``` > docker exec -it <container name> bash```
  
 une autre forme ici je peux lancer le client mysql qui se trouve à l interieur de mon conteneur my-mysQL ( il y a un le deamn mysqlD c'est le serveur mysql et le client mysql)
+
 ``` > docker exec -it my-mySQL mysql --password``` 
+
 i : mode interactif; t : terminal je suis entrain d'executer un commande mysql a l'interieru du conteneur my-mySQL en mode interractif consol
 
 ``` 
@@ -82,7 +85,9 @@ i : mode interactif; t : terminal je suis entrain d'executer un commande mysql a
 alpine image Linux tres reduite ( contient l'itentiel pour demmarer des commande ou sctipt shell), une fois démarrer je lance la commande ping sur le serveur googole.
 
 ```
-> docker attach ideConteneur ( attacher une consol BackGround 
-``` 
+> docker attach ideConteneur
+```
+attacher une consol BackGround dans le cas ou le conteneur a été lancer en mode background -d option.
+ 
 utiliser un nom passer en paramettre au lieu du nom standar avec le positionnement de mot de passse pour le user root
-############l############l'image de base c'est le premier appel dans les fichier dockerFile
+##### l'image de base c'est le premier appel dans les fichier dockerFile
