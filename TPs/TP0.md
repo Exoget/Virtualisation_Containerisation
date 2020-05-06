@@ -60,22 +60,28 @@ sur le port 80 ( sinon elle est inacccessible depuis l'exterieur) ( sinon à l'i
 nginix conteneur avec le  meme port 80)
 ``` 
 > sudo doker run -d -p 8082:80 nginx ( on peut aussi garder le meme port 80:80 )
-
-
-> docker stop conteneur 
-> docker rm conteneur  ( remove pour les conteneur)   rmi ( remove pour les images)
-
-
-> docker run --name my-mySQL -e MYSQL_ROOT_PASSWORD=root -d mysql
-
-Pour entrer en mode shell dans un cotenuer en cours d'execution
-> docker exec -it <container name> bash
-> docker exec -it my-mySQL mysql --password  ( i : mode interactif; t : terminal) ( je suis entrain d'executer un commande mysql a l'interieru
-du conteneur my-mySQL en mode interractif consol
 ``` 
+
+``` > docker stop conteneur```  pour stoper un conteneur
+
+``` > docker rm conteneur```   ( remove pour les conteneur)   rmi ( remove pour les images)
+
+``` 
+> docker run --name my-mySQL -e MYSQL_ROOT_PASSWORD=root -d mysql
+``` 
+Pour entrer en mode shell dans un cotenuer en cours d'execution
+``` > docker exec -it <container name> bash```
+ 
+une autre forme ici je peux lancer le client mysql qui se trouve à l interieur de mon conteneur my-mysQL ( il y a un le deamn mysqlD c'est le serveur mysql et le client mysql)
+``` > docker exec -it my-mySQL mysql --password``` 
+i : mode interactif; t : terminal je suis entrain d'executer un commande mysql a l'interieru du conteneur my-mySQL en mode interractif consol
+
 ``` 
 > docker run --rm -d alpine ping 8.8.8.8
- alpine image Linux tres reduite ( contient l'itentiel pour demmarer des commande ou sctipt shell)
+```
+alpine image Linux tres reduite ( contient l'itentiel pour demmarer des commande ou sctipt shell), une fois démarrer je lance la commande ping sur le serveur googole.
+
+```
 > docker attach ideConteneur ( attacher une consol BackGround 
 ``` 
 utiliser un nom passer en paramettre au lieu du nom standar avec le positionnement de mot de passse pour le user root
